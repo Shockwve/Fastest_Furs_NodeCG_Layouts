@@ -1,0 +1,50 @@
+/* Runner and pronouns panel. */
+#runner-container1 {
+	width: 491px;
+	height: 66px;
+	line-height: 66px;
+	left: 8px;
+	top: 580px;
+	
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/* Runner name dynamic text. */
+.runner-name {
+	max-width: 517px;
+	padding-left: 10px;
+}
+
+/* Game name panel. */
+#game-name {
+	width: 496px;
+	height: 84px;
+	line-height: 84px;
+	left: 8px;
+	top: 413px;
+	
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/* Category and estimate panel. */
+#info-container {
+	width: 496px;
+	height: 60px;
+	line-height: 60px;
+	left: 8px;
+	top: 480px;
+	
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/* Timer panel. */
+#timer {
+	width: 524px;
+	height: 116px;
+	line-height: 116px;
+	left: 0px;
+	top: 890px;
+}

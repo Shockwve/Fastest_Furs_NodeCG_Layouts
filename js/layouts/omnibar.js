@@ -25,7 +25,7 @@ NodeCG.waitForReplicants(targetData, pollData, rewardData, campaignData, charity
 	// Set static text.	
 	function staticText(index) {
 		if (index === 0)
-			setOmnibarHtml(`<p class="is-single-line is-text-centered">Fastest Furs Fall Festival 2021 benefiting Trans Lifeline</p>`)
+			setOmnibarHtml(`<p class="is-single-line is-text-centered">Fastest Furs Fall Fest 2021 benefiting Trans Lifeline</p>`)
 		else
 			setOmnibarHtml(`<p class="is-single-line is-text-centered">Donate at https://fastestfurs.com/donate</p>`)
 	}

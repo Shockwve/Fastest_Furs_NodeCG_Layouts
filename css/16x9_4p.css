@@ -16,26 +16,26 @@
 
 /* Player 1 info position. */
 #runner-container1 {
-	left: 25px;
-	top: 420px;
+	left: 16px;
+	top: 412px;
 }
 
 /* Player 2 info position. */
 #runner-container2 {
 	left: 1127px;
-	top: 420px;
+	top: 412px;
 }
 
 /* Player 3 info position. */
 #runner-container3 {
-	left: 291px;
-	top: 506px;
+	left: 279px;
+	top: 525px;
 }
 
 /* Player 4 info position. */
 #runner-container4 {
-	left: 1393px;
-	top: 506px;
+	left: 1387px;
+	top: 525px;
 }
 
 /* Game name panel. */

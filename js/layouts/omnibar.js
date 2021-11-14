@@ -41,9 +41,9 @@ NodeCG.waitForReplicants(targetData, pollData, rewardData, campaignData, charity
 	function runText(index) {
 		const players = getNamesForRun(nextRuns.value.data[index]).join(', ');
 		if (index === 0)
-			setOmnibarHtml(`<p class='is-multiline is-text-centered'>UP NEXT: ${nextRuns.value.data[index].game}</p> <p class='is-multiline is-text-centered'>${nextRuns.value.data[index].category} by ${players}</p>`)
+			setOmnibarHtml(`<p class='is-single-line is-text-centered'>UP NEXT: ${nextRuns.value.data[index].game} - ${nextRuns.value.data[index].category} by ${players}</p>`)
 		else
-			setOmnibarHtml(`<p class="is-multiline is-text-centered">COMING LATER: ${nextRuns.value.data[index].game}</p> <p class="is-multiline is-text-centered">${nextRuns.value.data[index].category} by ${players}</p>`)
+			setOmnibarHtml(`<p class="is-single-line is-text-centered">COMING LATER: ${nextRuns.value.data[index].game} - ${nextRuns.value.data[index].category} by ${players}</p>`)
 	}
 
 	// Targets text.
@@ -158,7 +158,6 @@ $(document).ready(function() {
         	dataType: 'json',
         	success: function(data, status){
         		res = data;
-        		console.log("got data " + res.total);
        			$("#donation-total-ff").text("$" + res.total);
        			document.getElementById("donation-total")
         	},
@@ -176,7 +175,6 @@ $(document).ready(function() {
         	dataType: 'json',
         	success: function(data, status){
         		res = data;
-        		console.log("got data " + res.total);
        			$("#donation-total-ff").text("$" + res.total);
        			document.getElementById("donation-total")
         	},

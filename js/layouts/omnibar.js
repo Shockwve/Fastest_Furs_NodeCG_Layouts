@@ -13,6 +13,7 @@ let host = '';
 let staticIndex, runIndex, targetIndex, pollIndex, rewardIndex;
 rewardIndex = pollIndex = targetIndex = runIndex = 10;
 staticIndex = 0;
+let eventGoal = 'Marathon PB -> $12,231';
 
 let showHost = false;
 let showGoal = false;
@@ -79,7 +80,7 @@ NodeCG.waitForReplicants(targetData, pollData, rewardData, campaignData, charity
 
 	// Goals text.
 	function goalText() {
-		setOmnibarHtml(`<p class="is-multiline is-text-centered">EVENT GOAL: $10,000</p>`)
+		setOmnibarHtml(`<p class="is-single-line is-text-centered">EVENT GOAL: ` + eventGoal + `</p>`)
 	}
 
 	// Do not edit below this line (unless you know what you're doing!)

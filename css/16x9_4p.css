@@ -16,25 +16,25 @@
 
 /* Player 1 info position. */
 #runner-container1 {
-	left: 16px;
+	left: 20px;
 	top: 417px;
 }
 
 /* Player 2 info position. */
 #runner-container2 {
-	left: 1127px;
+	left: 1131px;
 	top: 417px;
 }
 
 /* Player 3 info position. */
 #runner-container3 {
-	left: 279px;
+	left: 283px;
 	top: 530px;
 }
 
 /* Player 4 info position. */
 #runner-container4 {
-	left: 1387px;
+	left: 1391px;
 	top: 530px;
 }
 

@@ -43,7 +43,7 @@ NodeCG.waitForReplicants(targetData, pollData, rewardData, campaignData, charity
 		if (index === 0)
 			setOmnibarHtml(`<p class='is-multiline is-text-centered'>UP NEXT: ${nextRuns.value.data[index].game}</p> <p class='is-multiline is-text-centered'>${nextRuns.value.data[index].category} by ${players}</p>`)
 		else
-			setOmnibarHtml(`<p class="is-multiline is-text-centered">ON DECK: ${nextRuns.value.data[index].game}</p> <p class="is-multiline is-text-centered">${nextRuns.value.data[index].category} by ${players}</p>`)
+			setOmnibarHtml(`<p class="is-multiline is-text-centered">COMING LATER: ${nextRuns.value.data[index].game}</p> <p class="is-multiline is-text-centered">${nextRuns.value.data[index].category} by ${players}</p>`)
 	}
 
 	// Targets text.

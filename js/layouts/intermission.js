@@ -75,7 +75,6 @@ $(document).ready(function() {
         	dataType: 'json',
         	success: function(data, status){
         		res = data;
-        		console.log("got data " + res.total);
        			$("#donation-total-ff").text("$" + res.total);
        			document.getElementById("donation-total")
         	},
@@ -93,7 +92,6 @@ $(document).ready(function() {
         	dataType: 'json',
         	success: function(data, status){
         		res = data;
-        		console.log("got data " + res.total);
        			$("#donation-total-ff").text("$" + res.total);
        			document.getElementById("donation-total")
         	},

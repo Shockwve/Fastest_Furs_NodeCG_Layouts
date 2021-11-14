@@ -1,7 +1,7 @@
 /* Runner and pronouns panel. */
 .runner-container {
-	width: 500px;
-	height: 66px;
+	width: 480px;
+	height: 55px;
 	line-height: 66px;
 	
 	padding-left: 10px;
@@ -11,29 +11,30 @@
 /* Runner name dynamic text. */
 .runner-name {
 	max-width: 365px;
+	border: none;
 }
 
 /* Player 1 info position. */
 #runner-container1 {
-	left: 14px;
+	left: 25px;
 	top: 420px;
 }
 
 /* Player 2 info position. */
 #runner-container2 {
-	left: 1116px;
+	left: 1127px;
 	top: 420px;
 }
 
 /* Player 3 info position. */
 #runner-container3 {
-	left: 280px;
+	left: 291px;
 	top: 506px;
 }
 
 /* Player 4 info position. */
 #runner-container4 {
-	left: 1382px;
+	left: 1393px;
 	top: 506px;
 }
 

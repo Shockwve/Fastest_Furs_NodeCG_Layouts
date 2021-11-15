@@ -13,7 +13,7 @@ let host = '';
 let staticIndex, runIndex, targetIndex, pollIndex, rewardIndex;
 rewardIndex = pollIndex = targetIndex = runIndex = 10;
 staticIndex = 0;
-let eventGoal = 'Marathon PB -> $12,231';
+let eventGoal = 'AS FAR AS WE CAN GO';
 
 let showHost = false;
 let showGoal = false;
@@ -26,6 +26,7 @@ NodeCG.waitForReplicants(targetData, pollData, rewardData, campaignData, charity
 	// Set static text.	
 	function staticText(index) {
 		if (index === 0)
+			//setOmnibarHtml(`<p class="is-single-line is-text-centered">TRANS RIGHTS</p>`)
 			setOmnibarHtml(`<p class="is-single-line is-text-centered">Fastest Furs Fall Fest 2021 benefiting Trans Lifeline</p>`)
 		else
 			setOmnibarHtml(`<p class="is-single-line is-text-centered">Donate at https://fastestfurs.com/donate</p>`)
@@ -41,6 +42,7 @@ NodeCG.waitForReplicants(targetData, pollData, rewardData, campaignData, charity
 	function runText(index) {
 		const players = getNamesForRun(nextRuns.value.data[index]).join(', ');
 		if (index === 0)
+			
 			setOmnibarHtml(`<p class='is-single-line is-text-centered'>UP NEXT: ${nextRuns.value.data[index].game} - ${nextRuns.value.data[index].category} by ${players}</p>`)
 		else
 			setOmnibarHtml(`<p class="is-single-line is-text-centered">COMING LATER: ${nextRuns.value.data[index].game} - ${nextRuns.value.data[index].category} by ${players}</p>`)

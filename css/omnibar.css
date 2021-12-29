@@ -1,5 +1,5 @@
 #omnibar {
-	background-color: #773D7C;
+	background-color: #2F6493;
 	display: flex;
 	width: 1920px;
 	height: 55px;
@@ -36,12 +36,12 @@
 }
 
 #charity-logo {
-	background-color: #000000;
+	/*background-color: #000000;*/
 	padding: 0 0.5rem;
 }
 
 #donation-total {
-	background-color: #773D7C;
+	background-color: #2F6493;
 	padding: 0 0.75rem;
 	font-size: 36pt;
 	border-style: solid;
@@ -50,7 +50,7 @@
 }
 
 #donation-container-ff{
-	background-color: #773D7C;
+	background-color: #2F6493;
 	padding: 0 0.75rem;
 	font-size: 36pt;
 	border-style: solid;
@@ -59,7 +59,7 @@
 }
 
 #marathon-logo {
-	background-color: #773D7C;
+	background-color: #2F6493;
 	padding: 0 1rem;
 	border-style: solid;
 	border-width: 0px 0px 0px 3px;

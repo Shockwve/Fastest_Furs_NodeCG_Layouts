@@ -107,9 +107,9 @@ NodeCG.waitForReplicants(targetData, pollData, rewardData, campaignData, charity
 	runTickerText();
 
 	function setOmnibarHtml(html) {
-		$('#omnibar-content').fadeOut(nodecg.bundleConfig.omnibar.fadeOutTime, () => {
-			$('#omnibar-content').html(html).fadeIn(nodecg.bundleConfig.omnibar.fadeInTime);
-		});
+		//$('#omnibar-content').fadeOut(nodecg.bundleConfig.omnibar.fadeOutTime, () => {
+		//	$('#omnibar-content').html(html).fadeIn(nodecg.bundleConfig.omnibar.fadeInTime);
+		//});
 	}
 
 	function runTickerText() {
@@ -134,12 +134,12 @@ NodeCG.waitForReplicants(targetData, pollData, rewardData, campaignData, charity
 				rewardText(rewardIndex)
 				rewardIndex++;
 			}
-			else if (showGoal && nodecg.bundleConfig.omnibar.showGoal) {
+			else if (false && showGoal && nodecg.bundleConfig.omnibar.showGoal) {
 				goalText()
 				showGoal = false;
 			}
 			else {
-				staticText(staticIndex)
+				//staticText(staticIndex)
 				staticIndex++;
 
 				if (staticIndex > staticText.length) {

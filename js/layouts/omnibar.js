@@ -13,10 +13,10 @@ let host = '';
 let staticIndex, runIndex, targetIndex, pollIndex, rewardIndex;
 rewardIndex = pollIndex = targetIndex = runIndex = 10;
 staticIndex = 0;
-let eventGoal = 'AS FAR AS WE CAN GO';
+let eventGoal = '';
 
 let showHost = false;
-let showGoal = false;
+let showGoal = true;
 
 NodeCG.waitForReplicants(targetData, pollData, rewardData, campaignData, charityLogo, marathonLogo, runDataArray, runDataActiveRun).then(() => {
 	document.getElementById('charity-logo-img').setAttribute('src', charityLogo.value[0].url)
@@ -27,7 +27,7 @@ NodeCG.waitForReplicants(targetData, pollData, rewardData, campaignData, charity
 	function staticText(index) {
 		if (index === 0)
 			//setOmnibarHtml(`<p class="is-single-line is-text-centered">TRANS RIGHTS</p>`)
-			setOmnibarHtml(`<p class="is-single-line is-text-centered">Fastest Furs Fall Fest 2021 benefiting Trans Lifeline</p>`)
+			setOmnibarHtml(`<p class="is-single-line is-text-centered">Fastest Furs Fall Fest 2022 benefiting Organization for Autism Research</p>`)
 		else
 			setOmnibarHtml(`<p class="is-single-line is-text-centered">Donate at https://fastestfurs.com/donate</p>`)
 	}
@@ -42,7 +42,6 @@ NodeCG.waitForReplicants(targetData, pollData, rewardData, campaignData, charity
 	function runText(index) {
 		const players = getNamesForRun(nextRuns.value.data[index]).join(', ');
 		if (index === 0)
-			
 			setOmnibarHtml(`<p class='is-single-line is-text-centered'>UP NEXT: ${nextRuns.value.data[index].game} - ${nextRuns.value.data[index].category} by ${players}</p>`)
 		else
 			setOmnibarHtml(`<p class="is-single-line is-text-centered">COMING LATER: ${nextRuns.value.data[index].game} - ${nextRuns.value.data[index].category} by ${players}</p>`)
@@ -82,7 +81,7 @@ NodeCG.waitForReplicants(targetData, pollData, rewardData, campaignData, charity
 
 	// Goals text.
 	function goalText() {
-		setOmnibarHtml(`<p class="is-single-line is-text-centered">EVENT GOAL: ` + eventGoal + `</p>`)
+		setOmnibarHtml(`<p class="is-single-line is-text-centered">` + eventGoal + `</p>`)
 	}
 
 	// Do not edit below this line (unless you know what you're doing!)
@@ -107,9 +106,9 @@ NodeCG.waitForReplicants(targetData, pollData, rewardData, campaignData, charity
 	runTickerText();
 
 	function setOmnibarHtml(html) {
-		//$('#omnibar-content').fadeOut(nodecg.bundleConfig.omnibar.fadeOutTime, () => {
-		//	$('#omnibar-content').html(html).fadeIn(nodecg.bundleConfig.omnibar.fadeInTime);
-		//});
+		$('#omnibar-content').fadeOut(nodecg.bundleConfig.omnibar.fadeOutTime, () => {
+			$('#omnibar-content').html(html).fadeIn(nodecg.bundleConfig.omnibar.fadeInTime);
+		});
 	}
 
 	function runTickerText() {
@@ -134,7 +133,7 @@ NodeCG.waitForReplicants(targetData, pollData, rewardData, campaignData, charity
 				rewardText(rewardIndex)
 				rewardIndex++;
 			}
-			else if (false && showGoal && nodecg.bundleConfig.omnibar.showGoal) {
+			else if (showGoal && nodecg.bundleConfig.omnibar.showGoal) {
 				goalText()
 				showGoal = false;
 			}
@@ -164,9 +163,7 @@ $(document).ready(function() {
        			document.getElementById("donation-total")
         	},
         	error: function(data, status, error){
-        		
-        		console.log("FUUUUUUUCK " + status);
-        		console.log("SHIIIIIIT  " + error);
+        		console.log("ERROR: " + error);
         	} 
     	});
 
@@ -181,9 +178,7 @@ $(document).ready(function() {
        			document.getElementById("donation-total")
         	},
         	error: function(data, status, error){
-        		
-        		console.log("FUUUUUUUCK " + status);
-        		console.log("SHIIIIIIT  " + error);
+        		console.log("ERROR: " + error);
         	} 
     	});
     }, 5000);

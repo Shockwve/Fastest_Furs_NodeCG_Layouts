@@ -41,25 +41,23 @@
 /* Game name panel. */
 #game-name {
 	width: 260px;
-	height: 78px;
+	height: 100px;
 	line-height: 78px;
 	left: 826px;
-	top: 340px;
-	
+	top: 383px;
+	font-size: 44px;
 	padding-left: 2px;
 	padding-right: 2px;
 }
 
 /* Category and estimate panel. */
 #info-container {
-	width: 256px;
+	width: 464px;
 	height: 50px;
 	line-height: 50px;
-	left: 826px;
-	top: 420px;
-
+	left: 676px;
+	top: 483px;
 	font-size: 20px;
-	
 	padding-left: 4px;
 	padding-right: 4px;
 }

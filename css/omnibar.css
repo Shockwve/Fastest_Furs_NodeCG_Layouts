@@ -3,6 +3,8 @@
 	display: flex;
 	width: 1920px;
 	height: 55px;
+	-webkit-text-stroke-width: 1px;
+  	-webkit-text-stroke-color: #000;
 	border-style: solid;
 	border-width: 3px 0px 0px 0px;
 	border-color: #DDDDDD;
@@ -23,7 +25,7 @@
 }
 
 .is-single-line {
-	font-size: 24pt;
+	font-size: 28pt;
 }
 
 .is-multiline {
@@ -53,17 +55,16 @@
 	background-color: #2F6493;
 	padding: 0 0.75rem;
 	font-size: 36pt;
+	-webkit-text-stroke-width: 2px;
+  	-webkit-text-stroke-color: #000;
 	border-style: solid;
-	border-width: 0px 3px 0px 0px;
+	border-width: 0px 0px 0px 3px;
 	border-color: #DDDDDD;
 }
 
 #marathon-logo {
 	background-color: #2F6493;
 	padding: 0 1rem;
-	border-style: solid;
-	border-width: 0px 0px 0px 3px;
-	border-color: #DDDDDD;
 }
 
 #charity-logo img {

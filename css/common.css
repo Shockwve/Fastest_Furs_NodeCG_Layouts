@@ -4,6 +4,11 @@
 }
 
 @font-face {
+	font-family: 'Bebas';
+	src: url('../fonts/Bebas-Regular.otf');
+}
+
+@font-face {
 	font-family: 'Digital-7';
 	src: url('../fonts/digital-7 (mono).ttf');
 }
@@ -13,7 +18,7 @@
 /* General settings. */
 
 body {
-	font-family: 'Antapani';
+	font-family: 'Bebas';
 	/*-webkit-text-stroke: 2px black;*/
 	color: #f9f9f9;
 	width: 1920px;
@@ -27,6 +32,12 @@ body {
 	font-stretch: semi-condensed;
 	text-align: center;
 	position: absolute;
+
+	background: -webkit-linear-gradient(#05baff, #6afffd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+  	-webkit-text-stroke-color: #003c53;
 	
 	border: 2px solid transparent;
 }
@@ -46,6 +57,12 @@ body {
 	float: left;
 	vertical-align: middle;
 	width: 100%;
+
+	background: -webkit-linear-gradient(#ffffff, #d9d9d9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+  	-webkit-text-stroke-color: #222;
 
 	border: 2px solid white;
 }
@@ -83,10 +100,14 @@ body {
 
 /* Category and estimate panel. */
 #info-container {
+	font-family: 'Antapani';
 	font-size: 21pt;
 	position: absolute;
 	display: flex;
 	
+	-webkit-text-stroke-width: 1px;
+  	-webkit-text-stroke-color: #000;
+
 	border: 2px solid transparent;
 }
 
@@ -130,19 +151,40 @@ body {
 	text-align: center;
 	position: absolute;
 	
-	border: 2px solid transparent;
+	border: 2px solid #05baff;
+	background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), url(../img/common/timer-background.jpg);
 }
 
 .timer_stopped {
-	color: #c0c0c0;
+	background: -webkit-linear-gradient(#05baff, #6afffd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #05baff;
+    -webkit-text-stroke-width: 2px;
+  	-webkit-text-stroke-color: #003c53;
+}
+
+.timer_running {
+	background: -webkit-linear-gradient(#05baff, #6afffd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #05baff;
+    -webkit-text-stroke-width: 2px;
+  	-webkit-text-stroke-color: #003c53;
 }
 
 .timer_paused {
-	color: #c0c0c0;
+	background: -webkit-linear-gradient(#05baff, #6afffd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #05baff;
+    -webkit-text-stroke-width: 2px;
+  	-webkit-text-stroke-color: #003c53;
 }
 
 .timer_finished {
-	color: #50ff50;
+	background: -webkit-linear-gradient(#05baff, #6afffd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #05baff;
+    -webkit-text-stroke-width: 2px;
+  	-webkit-text-stroke-color: #003c53;
 }
 
 /* Sponsor panel. */

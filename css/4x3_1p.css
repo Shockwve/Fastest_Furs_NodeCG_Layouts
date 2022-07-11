@@ -48,20 +48,20 @@
 
 /* Timer panel. */
 #timer {
-	width: 524px;
-    height: 116px;
-    line-height: 116px;
-    left: -5px;
-    top: 875px;
+	width: 471px;
+	height: 114px;
+	line-height: 116px;
+	left: 36px;
+	top: 900px;
 }
 
 /* Sponsor panel. */
 #sponsor-container {
 	width: 500px;
-	height: 280px;
+	height: 200px;
 	line-height: 300px;
 	left: 19px;
-	top: 620px;
+	top: 645px;
 }
 
 /* Sponsor image max size. */

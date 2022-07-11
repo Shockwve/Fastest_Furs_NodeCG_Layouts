@@ -33,7 +33,7 @@
 	line-height: 90px;
 	left: 960px;
 	top: 818px;
-	font-size: 26px;
+	font-size: 72px;
 	
 	padding-left: 10px;
 	padding-right: 10px;
@@ -53,9 +53,9 @@
 
 /* Timer panel. */
 #timer {
-	width: 524px;
+	width: 398px;
 	height: 116px;
 	line-height: 116px;
-	left: 362px;
+	left: 387px;
 	top: 834px;
 }

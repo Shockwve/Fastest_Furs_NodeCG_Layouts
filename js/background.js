@@ -4,10 +4,13 @@ var pos_update_freq = 20;
 var left_pos_bounds = 10;
 var right_pos_bounds = 1895;
 var bottom_pos_bounds = 1080;
+var num_highlights_on_screen = 20;
+var cur_highlights_on_screen = 0;
 
 //create position
 setInterval(function () {
-    if ( document.hasFocus() ) {
+    if ( document.hasFocus() && cur_highlights_on_screen < num_highlights_on_screen) {
+        cur_highlights_on_screen += 1;
         var elem = document.createElement("DIV");
         elem.classList.add("background-glow");
         elem.style.left = Math.floor((Math.random() * right_pos_bounds) + left_pos_bounds) + 'px';
@@ -34,12 +37,16 @@ setInterval(function(){
 
 // Delete divs that go OOBS
 setInterval(function(){
-    if ( document.hasFocus() ) {
+    if ( document.hasFocus() ) {     
         var oobDivs = document.getElementsByClassName("background-glow");
-        oobDivs.forEach(function(elem){
-            if (elem.style.top <= 0){
-                document.parentNode.removeChild(elem);
-            }
-        });
+        var arrayDivs = [...oobDivs];
+        if(arrayDivs.length > 0){
+            arrayDivs.forEach(function(elem){
+                if (parseInt(elem.style.top.substring(0, elem.style.top.length-2)) <= 0){
+                    cur_highlights_on_screen -=1;
+                    elem.parentNode.removeChild(elem);
+                }
+            });
+    }
     }
 }, 2000);

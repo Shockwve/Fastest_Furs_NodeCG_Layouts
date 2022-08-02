@@ -3,20 +3,28 @@
 	width: 690px;
     height: 66px;
     line-height: 66px;
-    left: 8px;
+    left: 35px;
     top: 500px;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 /* Runner name dynamic text. */
 .runner-name {
-	max-width: 512px;
-	padding-left: 10px;
+    text-align: center;
+    margin-right:  0px;
+}
+
+.pronouns{
+    text-align: center;
+    float: right;
+    top: 56px;
+    left: 0px;
+    position: absolute;
+    width: 426px;
 }
 
 /* Game name panel. */
 #game-name {
+    font-size: 162pt;
 	width: 675px;
     height: 84px;
     line-height: 84px;

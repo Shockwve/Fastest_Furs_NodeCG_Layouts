@@ -1,5 +1,5 @@
 #omnibar {
-	background-color: #2F6493;
+	background-color: #1DAF5A;
 	display: flex;
 	width: 1920px;
 	height: 55px;
@@ -43,7 +43,7 @@
 }
 
 #donation-total {
-	background-color: #2F6493;
+	background-color: #1DAF5A;
 	padding: 0 0.75rem;
 	font-size: 36pt;
 	border-style: solid;
@@ -52,7 +52,7 @@
 }
 
 #donation-container-ff{
-	background-color: #2F6493;
+	background-color: #1DAF5A;
 	padding: 0 0.75rem;
 	font-size: 36pt;
 	-webkit-text-stroke-width: 2px;
@@ -63,7 +63,7 @@
 }
 
 #marathon-logo {
-	background-color: #2F6493;
+	background-color: #1DAF5A;
 	padding: 0 1rem;
 }
 

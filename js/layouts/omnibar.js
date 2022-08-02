@@ -26,8 +26,8 @@ NodeCG.waitForReplicants(targetData, pollData, rewardData, campaignData, charity
 	// Set static text.	
 	function staticText(index) {
 		if (index === 0)
-			//setOmnibarHtml(`<p class="is-single-line is-text-centered">TRANS RIGHTS</p>`)
-			setOmnibarHtml(`<p class="is-single-line is-text-centered">Fastest Furs Fall Fest 2022 benefiting Organization for Autism Research</p>`)
+			setOmnibarHtml(`<p class="is-single-line is-text-centered"></p>`)
+			//setOmnibarHtml(`<p class="is-single-line is-text-centered">Fastest Furs Fall Fest 2022 benefiting Organization for Autism Research</p>`)
 		else
 			setOmnibarHtml(`<p class="is-single-line is-text-centered">Donate at https://fastestfurs.com/donate</p>`)
 	}
@@ -112,6 +112,7 @@ NodeCG.waitForReplicants(targetData, pollData, rewardData, campaignData, charity
 	}
 
 	function runTickerText() {
+
 		setInterval(() => {
 			if (showHost && nodecg.bundleConfig.omnibar.showHost && host !== '') {
 				hostText();
@@ -138,7 +139,7 @@ NodeCG.waitForReplicants(targetData, pollData, rewardData, campaignData, charity
 				showGoal = false;
 			}
 			else {
-				//staticText(staticIndex)
+				staticText(staticIndex)
 				staticIndex++;
 
 				if (staticIndex > staticText.length) {

@@ -23,6 +23,8 @@
     position: absolute;
     top: 907px;
 	left: 100px;
+
+	color: #f9f9f9;
 	
 	padding-left: 15px;
 	padding-right: 15px;
@@ -37,6 +39,8 @@
 	position: absolute;
 	top: 226px;
 	left: 1240px;
+
+	color: #f9f9f9;
 	
 	border: 2px solid transparent;
 }
@@ -50,6 +54,8 @@
 	position: absolute;
 	top: 270px;
 	left: 1240px;
+
+	color: #f9f9f9;
 	
 	padding-left: 15px;
 	padding-right: 15px;
@@ -64,6 +70,8 @@
 	position: absolute;
 	top: 405px;
 	left: 1296px;
+
+	color: #f9f9f9;
 	
 	padding-left: 15px;
 	padding-right: 7.5px;
@@ -85,6 +93,8 @@
 	position: absolute;
 	top: 519px;
 	left: 1320px;
+
+	color: #f9f9f9;
 	
 	border: 2px solid transparent;
 }
@@ -98,6 +108,8 @@
 	position: absolute;
 	top: 561px;
 	left: 1320px;
+
+	color: #f9f9f9;
 	
 	padding-left: 15px;
 	padding-right: 7.5px;
@@ -112,6 +124,8 @@
 	position: absolute;
 	top: 675px;
 	left: 1377px;
+
+	color: #f9f9f9;
 	
 	padding-left: 15px;
 	padding-right: 7.5px;
@@ -122,6 +136,8 @@
 /* Runner name dynamic text. */
 #on-deck-info1 {
 	max-width: 345px;
+
+	color: #f9f9f9;
 	
 	border: 2px solid transparent;	
 }
@@ -135,6 +151,8 @@
 	position: absolute;
 	top: 792px;
 	left: 1320px;
+
+	color: #f9f9f9;
 	
 	padding-left: 10px;
 	padding-right: 5px;
@@ -149,6 +167,8 @@
 	position: absolute;
 	top: 906px;
 	left: 1377px;
+
+	color: #f9f9f9;
 	
 	padding-left: 15px;
 	padding-right: 7.5px;
@@ -159,6 +179,8 @@
 /* Runner name dynamic text. */
 #on-deck-info2 {
 	max-width: 345px;
+
+	color: #f9f9f9;
 	
 	border: 2px solid transparent;	
 }

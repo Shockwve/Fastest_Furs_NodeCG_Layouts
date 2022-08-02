@@ -21,23 +21,28 @@ body {
 	font-family: 'Bebas';
 	/*-webkit-text-stroke: 2px black;*/
 	color: #f9f9f9;
+
+	background: #234833;
 	width: 1920px;
 	height: 1080px;
 	position: absolute;
+
+	overflow: hidden;
 }
 
 /* Game name panel. */
 #game-name {
 	font-size: 62pt;
+
 	font-stretch: semi-condensed;
 	text-align: center;
 	position: absolute;
 
-	background: -webkit-linear-gradient(#05baff, #6afffd);
+	background: -webkit-linear-gradient(#23c667, #1DAF5A);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 2px;
-  	-webkit-text-stroke-color: #003c53;
+    -webkit-text-stroke-width: 1px;
+  	-webkit-text-stroke-color: #173122;
 	
 	border: 2px solid transparent;
 }
@@ -46,12 +51,12 @@ body {
 .runner-container {
 	position: absolute;
 	display: flex;
+	background: black;
 	
 	border: 2px solid transparent;
 }
 
 .runner-name {
-	margin-right: 15px;
 	font-size: 30pt;
 	font-stretch: semi-condensed;
 	float: left;
@@ -201,7 +206,7 @@ body {
 	width: 19px;
 	height: 100px;
 	position: absolute;
-	background-color: #008296;
+	background-color: #1DAF5A;
 	z-index: -1;
     }
 

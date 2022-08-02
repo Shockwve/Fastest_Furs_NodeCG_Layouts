@@ -1,10 +1,10 @@
-var create_freq = 2250;
+var create_freq = 750;
 var pos_update = 2; //small the number, the faster the update
 var pos_update_freq = 20;
 var left_pos_bounds = 10;
 var right_pos_bounds = 1895;
 var bottom_pos_bounds = 1080;
-var num_highlights_on_screen = 20;
+var num_highlights_on_screen = 30;
 var cur_highlights_on_screen = 0;
 
 //create position
